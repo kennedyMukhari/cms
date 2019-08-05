@@ -1,0 +1,38 @@
+<ion-toolbar color="dark">
+    <ion-title>Login</ion-title>
+  </ion-toolbar>
+
+<ion-content>
+<div class="background">
+  <ion-card >
+
+		<ion-card-header>
+			<ion-card-title style="color: white" text-center>Login Form</ion-card-title>
+    </ion-card-header>
+    
+		<ion-card-content >
+			<ion-list style="background:transparent" no-line>
+
+				<ion-item style="background-color: transparent">
+            <ion-label position="floating">Username</ion-label>
+					<ion-input type="text"></ion-input>
+        </ion-item>
+        
+				<ion-item>
+            <ion-label position="floating">Password</ion-label>
+					<ion-input type="password" postion="floating"></ion-input>
+        </ion-item>
+        
+				<a text-center> Forgot your login detail? <b >Get help signing in</b></a>
+				<ion-button expand="full" (click)="goToViewRooms()" color="dark">Log in</ion-button>
+        <p text-center style="color: black">OR</p>
+        
+				<ion-button padding-left padding-right expand="full" block color="primary">
+					<ion-icon name="logo-facebook"></ion-icon> Login with facebook
+				</ion-button>
+			</ion-list>
+		</ion-card-content>
+	</ion-card>
+	<ion-button class="bottom" fill="clear" color="light">Don't have an account? <b style="color: teal">Sign up</b></ion-button>
+</div>
+</ion-content>
